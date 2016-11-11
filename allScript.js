@@ -262,7 +262,7 @@ var account_id;
 			 if (block.result==0){
 			 	document.getElementById('display').innerHTML ="USERNAME OR PASSWORD IS WRONG";
 				 }else{
-			 window.location ="http://52.89.116.249/~francis.kornu/carpool/dashboard.html";
+			 window.location ="dashboard.html";
 		}
 	}
 
