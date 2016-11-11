@@ -1,80 +1,40 @@
-<!DOCTYPE html>
 <html>
-	<head>
+<head>
+	<title>Folder System</title>
+	<link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css">
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="materialize-v0.97.5/materialize/css/materialize.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src="materialize-v0.97.5/materialize/js/materialize.min.js"></script>
+      <script src="allScript.js"></script>
+   </head>
+<body>
+	<div id="box" action="" class="col s12" method="POST" style="width: 90%"><br>
+	<div style="text-align: center;font-size: 180%"><i>Ashesi Car Pool</i></div><br>
+	<div><img src="carpool.jpg" width="90" height="70" style="margin-left: 34%;border-radius: 65px"></div>
+	<div class="row">
+	<div class="blue-text text-darken-2" id="display" style="text-align: center;">
 
-		<meta name="format-detection" content="telephone=no">
-		<meta name="msapplication-tap-highlight" content="no">
-		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-
-		<!-- Path to your custom app styles-->
-		<link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
-		<link rel="stylesheet" href="css/jquery.mobile.theme.css" />
-         <script>
-			var userAgent = navigator.userAgent + '';
-			if (userAgent.indexOf('iPhone') > -1) {
-				document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
-				var mobile_system = 'iphone';
-			} else if (userAgent.indexOf('Android') > -1) {
-				document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
-				var mobile_system = 'android';
-			} else {
-				var mobile_system = '';
-			}
-		</script>
-
-		<script src="scripts/jquery.js"></script>
-		<!-- your scripts here -->
-		
-		<script src="scripts/jquery.mobile.js"></script>
-		<title>app</title>
-	</head>
-	<body>
-	   <div data-role="page" id="landingPage" style="background: white">
-
-			<div data-role="header" style="text-shadow: none">
-				<h1>tutorial</h1>
-				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
-			</div><!-- /header -->
-			<img src="img/download.png" />
-			<div data-role="content" style="text-shadow: none">
-				<a href="#declareRegions" data-transition="flip">
-				<button>
-					Declare
-				</button> </a>
-				<br />
-				<a href="#results" data-transition="slide">
-				<button>
-					Results
-				</button> </a>
-				<br />
-				<button id="geolocationdata">geolocation</button>
-				<div id="divWatchMeMove">My Current Position</div>
-				<button id="clearWatchbtn">Reset</button>
-				<br />
-				<button id="capturePhoto">camera</button>	<br />
-                  <div><center><img class="lazy" style="display:none;width:100%;height:100%;" id="smallImage" src="" /></center></div>
-				  	<br />
-				  <video width="400" controls>
-                      <source src="video.mp4" type="video/mp4">
-                      
-  
-                 </video>
-				 	<br />
-				 <audio controls>
-                        
-                        <source src="audio.mp3" type="audio/mpeg">
-
-                  </audio>
-				 
-			</div><!-- /content -->
-		</div><!-- /page -->
-
-	<!----------------------------->
-		
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-			<script type="text/javascript" src="cordova.js"></script>
-			<script type="text/javascript" src="scripts/platformOverrides.js"></script>
-			<script type="text/javascript" src="scripts/index.js"></script>
-
-	</body>
+</div>
+	<br>	
+	<div class="input-field col s11">
+		<i class="material-icons prefix icon-color">perm_identity</i>
+          <!-- <input placeholder="Username" id="username" type="text" style="color: white" class="validate" name="username"> -->
+          <input class='validate' type='text' name='username' id='username' style="color:black" />
+                <label for='username'>Username</label>
+        </div>
+	<div class="input-field col s11">
+		  <i class="material-icons prefix icon-color">lock</i>
+          <!-- <input placeholder="Password" id="password" type="password" style="color: white" class="validate" name="password"> -->
+          <input class='validate' type='password' name='password' id='password' style="color:black"/>
+                <label for='password'>Password</label>
+        </div>
+     <button class="btn waves-effect waves-light" type="submit" style="margin-left: 22%" name="submit" onclick="login()">Login
+     </button>&nbsp;&nbsp;
+     <a href="http://52.89.116.249/~francis.kornu/carpool/signup.html"><u>Sign Up</u></a>
+	</div>
+	</div>
+	<div><center><i>Welcome to the Ashesi Car Pool Application. If this is your first time, please <b style="color:#0099cc"><a href="http://52.89.116.249/~francis.kornu/carpool/signup.html">sign up</a></b> and starting creating and joining pools to your various destinations. If you are already signed up, you would just have to <b style="color:#0099cc">log in</b>.</i></center></div>
+</body>
 </html>
